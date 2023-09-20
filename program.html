@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto:wght@500&display=swap" rel="stylesheet">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+             *{
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+        }
+        .heading{
+            width:100%;
+            height:120px;
+            background: linear-gradient(173deg, rgba(255,255,255,1) 0%, rgba(226,226,226,0.9893207282913166) 100%);
+            display:flex;
+            align-items: center;
+            justify-content: space-around;
+            font-family: 'Heebo', sans-serif;
+            position:fixed;
+            z-index:100;
+        }
+
+        .c-name{
+            font-size: 1.5em;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .nav-items{
+            list-style: none;
+            text-transform: capitalize;
+            font-size: 1em;
+            display: flex;
+            gap:20px;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            text-shadow: -1px -3px 6px rgba(0,0,0,0.6);
+        } 
+
+        .bxl-facebook:hover{
+            cursor: pointer;
+        }
+
+        .bxl-twitter:hover{
+            cursor: pointer;
+        }
+
+        .bxl-linkedin:hover{
+            cursor: pointer;
+        }
+
+        .prog-heading{
+            width:100%;
+            height:300px;
+            background-color: rgba(2, 2, 61, 0.893);
+        }
+        .prog-heading p{
+            font-weight: 700;
+            text-align: center;
+            padding-top: 140px;
+            font-size: 5rem;
+            color: #ffcf11;
+            font-family: 'Oswald', sans-serif;
+        }
+        .wrapper{
+            width:80%;  
+            height:1600px;
+            margin-left: auto;
+            margin-right: auto;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap:30px;
+        }
+
+        .wrapper>.first-program{
+            margin-top: 30px;
+        }
+
+        .first-program{
+            width:70%;
+            height:300px;
+            background-color: white;
+            border:1px solid black;
+            overflow: hidden;
+            display:flex;
+            align-items: center;
+        }
+
+        .image{
+            width:100%;
+            height:100%;
+        }
+
+        .left{
+            width:50%;
+            height: 300px;
+        }
+
+        .right{
+            width:50%;
+            height: 300px;
+            padding-top: 60px;
+            padding-left: 50px;
+        }
+
+        .program-heading{
+            margin-bottom: 10px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 700;
+        }
+
+        .program-time{
+            font-family: 'Oswald', sans-serif;
+            font-weight: 300;
+        }
+
+        .program-price{
+            margin-top: 20px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        .join-button{
+            border-radius: 30px;
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            margin-top: 25px;
+            border:1px solid black;
+            font-family: 'Poppins', sans-serif;
+            background-color: white;
+            transition:color 0.125s,background-color 0.125s;
+            cursor: pointer;
+        }
+
+        .join-button:hover{
+            background-color: rgba(2, 2, 61, 0.893);
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <div class="logo name">
+                <span class="c-name">raex</span>
+            </div>
+            <div class="navigation">
+                <ul class="nav-items">
+                    <li><a href="./index.html">home</a></li>
+                    <li><a href="./about.html">about</a></li>
+                    <li><a href="./program.html">program</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">contact</a></li>
+                    <li>123-456-789</li>
+                    <li><i class='bx bxl-facebook' ></i></li>
+                    <li><i class='bx bxl-twitter'></i></li>
+                    <li><i class='bx bxl-linkedin' ></i></li>
+                    <li><a href="#">log in</a></li>
+                    <li><i class='bx bxs-log-in'></i></li>
+                </ul> 
+            </div>
+        </div>
+        <div class="prog-heading">
+            <p>
+                Programs
+            </p>
+        </div>
+        <div class="wrapper">
+            <div class="first-program">
+                <div class="left">
+                    <img src="brooke-cagle--uHVRvDr7pg-unsplash.jpg" alt="student image" class="image">
+                </div>
+                <div class="right">
+                    <p class="program-heading">
+                        Get Ready for College Program
+                    </p>
+                    <p class="program-time">
+                        24 Weeks
+                    </p>
+                    <p class="program-price">
+                        $350.00
+                    </p>
+                    <button class="join-button">
+                        Join
+                    </button>
+                </div>
+            </div>
+            <div class="first-program">
+                <div class="left">
+                    <img src="javier-trueba-iQPr1XkF5F0-unsplash.jpg" alt="student image" class="image">
+                </div>
+                <div class="right">
+                    <p class="program-heading">
+                        High School Completion Diploma
+                    </p>
+                    <p class="program-time">
+                        12 Weeks
+                    </p>
+                    <p class="program-price">
+                        $200.00
+                    </p>
+                    <button class="join-button">
+                        Join
+                    </button>
+                </div>
+            </div>
+            <div class="first-program">
+                <div class="left">
+                    <img src="kenny-eliason-zFSo6bnZJTw-unsplash.jpg" alt="student image" class="image">
+                </div>
+                <div class="right">
+                    <p class="program-heading">
+                        English as a Second Language
+                    </p>
+                    <p class="program-time">
+                        16 Weeks
+                    </p>
+                    <p class="program-price">
+                        $250.00
+                    </p>
+                    <button class="join-button">
+                        Join
+                    </button>
+                </div>
+            </div>
+            <div class="first-program">
+                <div class="left">
+                    <img src="naassom-azevedo-Q_Sei-TqSlc-unsplash.jpg" alt="student image" class="image">
+                </div>
+                <div class="right">
+                    <p class="program-heading">
+                        Get Education Development
+                    </p>
+                    <p class="program-time">
+                        12 Weeks
+                    </p>
+                    <p class="program-price">
+                        $250.00
+                    </p>
+                    <button class="join-button">
+                        Join
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

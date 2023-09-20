@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+          *{
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+        }
+        .heading{
+            width:100%;
+            height:120px;
+            background: linear-gradient(173deg, rgba(255,255,255,1) 0%, rgba(226,226,226,0.9893207282913166) 100%);
+            display:flex;
+            align-items: center;
+            justify-content: space-around;
+            font-family: 'Heebo', sans-serif;
+            position:fixed;
+            z-index:100;
+        }
+
+        .c-name{
+            font-size: 1.5em;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .nav-items{
+            list-style: none;
+            text-transform: capitalize;
+            font-size: 1em;
+            display: flex;
+            gap:20px;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            text-shadow: -1px -3px 6px rgba(0,0,0,0.6);
+        } 
+
+        .bxl-facebook:hover{
+            cursor: pointer;
+        }
+
+        .bxl-twitter:hover{
+            cursor: pointer;
+        }
+
+        .bxl-linkedin:hover{
+            cursor: pointer;
+        }
+
+        .prog-heading{
+            width:100%;
+            height:300px;
+            background-color: rgba(2, 2, 61, 0.893);
+        }
+        .prog-heading p{
+            font-weight: 700;
+            text-align: center;
+            padding-top: 140px;
+            font-size: 5rem;
+            color: #ffcf11;
+            font-family: 'Oswald', sans-serif;
+        }
+
+        .text-section{
+            margin-top:30px;
+            width:80%;
+            height:600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .text-section>p{
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 300;
+            line-height: 40px;
+            font-size: 1em;
+        }
+
+        .first-para-first-line{
+            padding-top: 30px;
+        }
+
+        .first-para-last-line{
+            margin-bottom: 30px;
+        }
+
+        .second-para-last-line{
+            margin-bottom: 30px;
+        }
+        
+        .final{
+            width:100%;
+            height:500px;
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .left{
+            width:50%;
+            height:500px;
+            background-color: #ffcf11;;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .right{
+            width:50%;
+            height:500px;
+        }
+
+        .image{
+            width:100%;
+            height:500px;
+        }
+
+        .left>p{
+            font-family: 'Oswald', sans-serif;
+            color: rgba(2, 2, 61, 0.893);
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 60px;
+        }
+
+        button{
+            padding:15px;
+            background-color: transparent;
+            border: 1px solid black;
+            text-transform: capitalize;
+            border-radius: 28px;
+            font-weight: 500;
+            font-size: 1em;
+            transition: all 0.2s ease-out;
+        }
+
+        button:hover{
+            color:#ffcf11;
+            background-color: rgba(2, 2, 61, 0.893);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <div class="logo name">
+                <span class="c-name">raex</span>
+            </div>
+            <div class="navigation">
+                <ul class="nav-items">
+                    <li><a href="./index.html">home</a></li>
+                    <li><a href="./about.html">about</a></li>
+                    <li><a href="./program.html">program</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">contact</a></li>
+                    <li>123-456-789</li>
+                    <li><i class='bx bxl-facebook' ></i></li>
+                    <li><i class='bx bxl-twitter'></i></li>
+                    <li><i class='bx bxl-linkedin' ></i></li>
+                    <li><a href="#">log in</a></li>
+                    <li><i class='bx bxs-log-in'></i></li>
+                </ul> 
+            </div>
+        </div>
+        <div class="prog-heading">
+            <p>
+                Our Mission
+            </p>
+        </div> 
+        <div class="text-section">
+            <p class="first-para-first-line">
+                I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and
+            </p>
+            <p>
+                make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your
+            </p>
+            <p class="first-para-last-line">
+                users know a little more about you.
+            </p>
+            <p>
+                This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your
+            </p>
+            <p>
+                company. Talk about your team and what services you provide. Tell your visitors the story of how you came up with the idea for your business
+            </p>
+            <p class="second-para-last-line">
+                and what makes you different from your competitors. Make your company stand out and show your visitors who you are.
+            </p>
+            <p>
+                At Wix we’re passionate about making templates that allow you to build fabulous websites and it’s all thanks to the support and feedback
+            </p>
+            <p>
+                from users like you! Keep up to date with New Releases and what’s Coming Soon in Wix ellaneous in Support. Feel free to tell us what you
+            </p>
+            <p>
+                think and give us feedback in the Wix Forum. If you’d like to benefit from a professional designer’s touch, head to the Wix Arena and connect
+            </p>
+            <p>
+                with one of our Wix Pro designers. Or if you need more help you can simply type your questions into the Support Forum and get instant
+            </p>
+            <p class="last-para-last-line">
+                answers. To keep up to date with everything Wix, including tips and things we think are cool, just head to the Wix Blog!
+            </p>
+        </div>
+        <div class="final">
+            <div class="left">
+                <p>
+                    Admission and Fees
+                </p>
+                <button>
+                    enroll now
+                </button>
+            </div>
+            <div class="right">
+                <img src="dylan-gillis-KdeqA3aTnBY-unsplash.jpg" alt="meeting" class="image">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

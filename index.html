@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Institution</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto:wght@500&display=swap" rel="stylesheet">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+        }
+        .heading{
+            width:100%;
+            height:120px;
+            background: linear-gradient(173deg, rgba(255,255,255,1) 0%, rgba(226,226,226,0.9893207282913166) 100%);
+            display:flex;
+            align-items: center;
+            justify-content: space-around;
+            font-family: 'Heebo', sans-serif;
+            position:fixed;
+            z-index:100;
+        }
+
+        .c-name{
+            font-size: 1.5em;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .nav-items{
+            list-style: none;
+            text-transform: capitalize;
+            font-size: 1em;
+            display: flex;
+            gap:20px;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+
+         a:hover{
+            text-shadow: -1px -3px 6px rgba(0,0,0,0.6);
+        } 
+
+        .bxl-facebook:hover{
+            cursor: pointer;
+        }
+
+        .bxl-twitter:hover{
+            cursor: pointer;
+        }
+
+        .bxl-linkedin:hover{
+            cursor: pointer;
+        }
+
+        .section-1{
+            width:100%;
+            height:700px;
+            background-image: url('./charlesdeluvio-Lks7vei-eAg-unsplash.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        .section-1-content{
+            height:800px;
+            width:600px;
+            position: absolute;
+            top: 50px;
+            left:200px;
+            padding-top:5em;
+            padding-left: 10em;
+        }
+
+        .section-1-heading{
+            font-size: 3rem;
+            color: rgb(255, 255, 1);
+            font-weight: 700;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .section-sub-content{
+            margin-top:50px;
+        }
+
+        .section-1-sub-content{
+            color:white;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 300;
+        }
+
+        .program{
+            width:100%;
+            height:200px;
+        }
+
+        .our-program{
+            text-align: center;
+            padding-top: 64px;
+            font-size: 3rem;
+            text-transform: capitalize;
+            font-weight: 600;
+            letter-spacing: 0.125px;
+            font-family: 'Oswald', sans-serif;
+            color:rgba(2, 2, 61, 0.893);
+        }
+
+        .program-container{
+            width:100%;
+            height:500px;
+            display: flex;
+            justify-content: space-around;
+            gap:20px;
+        }
+
+        .first-container{
+            height:500px;
+            width:20%;
+        }
+
+        .first-heading{
+            height:100px;
+        }
+
+        .f-heading{
+            text-align: center;
+            padding-top: 30px;
+            font-family: 'Oswald', sans-serif;
+            font-weight: 400;
+            font-size: 1.5rem;
+        }
+
+        .second-paragraph{
+            height:120px;
+            padding-top: 20px;
+        }
+
+        .second-paragraph>p{
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+
+        .third-paragraph{
+            height:150px;
+            padding-top: 30px;
+        }
+
+        .third-paragraph>p{
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+            font-weight: 300;
+        }
+
+        .fourth-paragraph{
+            padding-top:50px;
+        }
+
+        .fourth-paragraph>p{
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+            font-weight: 300;
+        }
+
+        .registration-container{
+            width:100%;
+            height:300px;
+            background-color: #ffcf11;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap:60px;
+            margin-top:50px;
+        }
+
+        .registration-content{
+            font-size: 3rem;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .btn>button{
+            border-radius: 30px;
+            padding:15px;
+            background-color:#ffcf11;
+            border-width: 1px solid black;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+            transition: color 0.125s, background-color 0.125s;
+        }
+
+        .btn>button:hover{
+            color:#ffcf11;
+            background-color: rgba(2, 2, 61, 0.893);
+        }
+
+        .success-stories-heading{
+            height:200px;
+            margin-top:30px;
+        }
+
+        .sucess-heading{
+            text-align: center;
+            padding-top: 64px;
+            font-size: 3rem;
+            text-transform: capitalize;
+            font-weight: 600;
+            letter-spacing: 0.125px;
+            font-family: 'Oswald', sans-serif;
+            color:rgba(2, 2, 61, 0.893);
+        }
+
+        .success-stories-content{
+            height:500px;
+            width:100%;
+            margin-top:30px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .first-sucess-story{
+            height:500px;
+            width:30%;
+            padding-top:120px;
+            position: relative;
+        }
+
+        .first-sucess-story>p{
+            text-align:center;
+            line-height: 30px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .btn-icon{
+            font-size: 2rem;
+            position: absolute;
+            top:10%;
+            left:45%;
+        }
+
+
+        .person-name{
+            position: absolute;
+            bottom:28%;
+            left:36%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <div class="logo name">
+                <span class="c-name">raex</span>
+            </div>
+            <div class="navigation">
+                <ul class="nav-items">
+                    <li><a href="./index.html">home</a></li>
+                    <li><a href="./about.html">about</a></li>
+                    <li><a href="./program.html">program</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">contact</a></li>
+                    <li>123-456-789</li>
+                    <li><i class='bx bxl-facebook' ></i></li>
+                    <li><i class='bx bxl-twitter'></i></li>
+                    <li><i class='bx bxl-linkedin' ></i></li>
+                    <li><a href="#">log in</a></li>
+                    <li><i class='bx bxs-log-in'></i></li>
+                </ul> 
+            </div>
+        </div>
+        <div class="section-1">
+            <div class="section-1-content">
+                <p class="section-1-heading">
+                    Redmond Adult
+                </p>
+                <p class="section-1-heading">
+                    Education Center
+                </p>
+                <div class="section-sub-content">
+                    <p class="section-1-sub-content">
+                        I'm a paragraph. Click here to add your own text and edit me. It’s easy.
+                        Just click “Edit Text” or double click me to add your own content and
+                        make changes to the font. Im a great place for you to tell a story and
+                        let your users know a little more about you.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="program">
+            <p class="our-program">
+                our programs
+            </p>
+        </div>
+        <div class="program-container">
+            <div class="first-container">
+                <div class="first-heading">
+                    <p class="f-heading">
+                        HSC
+                    </p>
+                </div>
+                <div class="second-paragraph">
+                    <p class="second-paragraph-first-line">
+                        High School
+                    </p>
+                    <p class="second-paragraph-second-line">
+                        Completion Diploma
+                    </p>
+                </div>
+                <div class="third-paragraph">
+                    <p class="third-para-first-line">
+                        I'm a paragraph.
+                    </p>
+                    <p class="third-para-second-line">
+                        Click here to add your own text
+                    </p>
+                    <p class="third-para-third-line">
+                        and edit me.
+                    </p>
+                </div>
+                <div class="fourth-paragraph">
+                    <p class="fourth-paragraph-first-line">
+                        Read More
+                    </p>
+                </div>
+            </div>
+            <div class="first-container">
+                <div class="first-heading">
+                    <p class="f-heading">
+                        GED
+                    </p>
+                </div>
+                <div class="second-paragraph">
+                    <p class="second-paragraph-first-line">
+                        General Education
+                    </p>
+                    <p class="second-paragraph-second-line">
+                        Development Program
+                    </p>
+                </div>
+                <div class="third-paragraph">
+                    <p class="third-para-first-line">
+                        I'm a paragraph.
+                    </p>
+                    <p class="third-para-second-line">
+                        Click here to add your own text
+                    </p>
+                    <p class="third-para-third-line">
+                        and edit me.
+                    </p>
+                </div>
+                <div class="fourth-paragraph">
+                    <p class="fourth-paragraph-first-line">
+                        Read More
+                    </p>
+                </div>
+            </div>
+            <div class="first-container">
+                <div class="first-heading">
+                    <p class="f-heading">
+                        ESL
+                    </p>
+                </div>
+                <div class="second-paragraph">
+                    <p class="second-paragraph-first-line">
+                        English as a
+                    </p>
+                    <p class="second-paragraph-second-line">
+                        Second Language
+                    </p>
+                </div>
+                <div class="third-paragraph">
+                    <p class="third-para-first-line">
+                        I'm a paragraph.
+                    </p>
+                    <p class="third-para-second-line">
+                        Click here to add your own text
+                    </p>
+                    <p class="third-para-third-line">
+                        and edit me.
+                    </p>
+                </div>
+                <div class="fourth-paragraph">
+                    <p class="fourth-paragraph-first-line">
+                        Read More
+                    </p>
+                </div>
+            </div>
+            <div class="first-container">
+                <div class="first-heading">
+                    <p class="f-heading">
+                        GRC
+                    </p>
+                </div>
+                <div class="second-paragraph">
+                    <p class="second-paragraph-first-line">
+                        Get Ready for
+                    </p>
+                    <p class="second-paragraph-second-line">
+                        College Program
+                    </p>
+                </div>
+                <div class="third-paragraph">
+                    <p class="third-para-first-line">
+                        I'm a paragraph.
+                    </p>
+                    <p class="third-para-second-line">
+                        Click here to add your own text
+                    </p>
+                    <p class="third-para-third-line">
+                        and edit me.
+                    </p>
+                </div>
+                <div class="fourth-paragraph">
+                    <p class="fourth-paragraph-first-line">
+                        Read More
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="registration-container">
+            <div class="registration-content">
+                <p>
+                    Spring Registration Is Now Open!
+                </p>
+            </div>
+            <div class="btn">
+                <button>
+                    Enroll Now
+                </button>
+            </div>
+        </div>
+        <div class="success-stories-heading">
+            <p class="sucess-heading">
+                Students Success Stories
+            </p>
+        </div>
+        <div class="success-stories-content">
+            <div class="first-sucess-story">
+                <i class='bx bxs-quote-alt-left btn-icon'></i>
+                <p>
+                    I'm a testimonial. Click to edit me
+                </p>
+                <p>
+                    and add text that says something
+                </p>
+                <p>
+                    nice about you and your services.
+                </p>
+                <p>
+                    Let your customers review you and
+                </p>
+                <p>
+                    tell their friends how great you are.
+                </p>
+                <p class="person-name">
+                    Apoorv Sharma
+                </p>
+                    
+            </div>
+            <div class="first-sucess-story">
+                <i class='bx bxs-quote-alt-left btn-icon'></i>
+                <p>
+                    I'm a testimonial. Click to edit me
+                </p>
+                <p>
+                    and add text that says something
+                </p>
+                <p>
+                    nice about you and your services.
+                </p>
+                <p>
+                    Let your customers review you and
+                </p>
+                <p>
+                    tell their friends how great you are.
+                </p>
+                <p class="person-name">
+                    Apoorv Sharma
+                </p>
+                    
+            </div>
+            <div class="first-sucess-story">
+                <i class='bx bxs-quote-alt-left btn-icon'></i>
+                <p>
+                    I'm a testimonial. Click to edit me
+                </p>
+                <p>
+                    and add text that says something
+                </p>
+                <p>
+                    nice about you and your services.
+                </p>
+                <p>
+                    Let your customers review you and
+                </p>
+                <p>
+                    tell their friends how great you are.
+                </p>
+                <p class="person-name">
+                    Apoorv Sharma
+                </p>
+                    
+            </div>
+        </div>
+    </div>
+</body>
+</html>
